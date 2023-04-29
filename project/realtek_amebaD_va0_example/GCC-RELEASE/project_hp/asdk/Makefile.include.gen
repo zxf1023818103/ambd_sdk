@@ -543,6 +543,9 @@ NETWORK_RENAME_CODE2SRAM:
 %.o:%.cpp
 	$(CC) -ffunction-sections $(CPPFLAGS) $(MODULE_IFLAGS) $< -o $@
 
+%.o:%.cc
+	$(CC) -ffunction-sections $(CPPFLAGS) $(MODULE_IFLAGS) $< -o $@
+
 #*****************************************************************************#
 #              RULES TO GENERATE OBJECT FILE FROM .S FILE                     #
 #*****************************************************************************#

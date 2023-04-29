@@ -17,7 +17,6 @@ project/realtek_amebaD_va0_example/GCC-RELEASE/project_lp/toolchain/linux/*
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_lp/asdk/obj_list.map
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_lp/asdk/config/scripts/lxdialog/lxdialog
 
-project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/lib/application/lib_user.a
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/build/*
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/image/*
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/toolchain/linux/*
