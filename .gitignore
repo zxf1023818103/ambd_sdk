@@ -3,6 +3,7 @@
 **/*\.d
 **/*\.su
 **/*\.i
+**/*\.ii
 **/*\.s
 **/*\.si4project
 
@@ -27,3 +28,4 @@ project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/text.map
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/config/scripts/lxdialog/lxdialog
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/lib/application/lib_resample.a
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/toolchain/asdk/*.tar.bz2
+project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/rom_size.txt

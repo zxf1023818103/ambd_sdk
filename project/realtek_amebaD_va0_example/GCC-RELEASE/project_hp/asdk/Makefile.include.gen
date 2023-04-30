@@ -357,8 +357,9 @@ GLOBAL_CFLAGS += -nostartfiles
 GLOBAL_CFLAGS += -nostdlib
 GLOBAL_CFLAGS += -Wall
 GLOBAL_CFLAGS += -Wpointer-arith
-GLOBAL_CFLAGS += -Wstrict-prototypes
-GLOBAL_CFLAGS += -Wundef
+# GLOBAL_CFLAGS += -Wstrict-prototypes
+# GLOBAL_CFLAGS += -Wundef
+GLOBAL_CFLAGS += -Wno-unused-parameter
 GLOBAL_CFLAGS += -Wno-write-strings
 GLOBAL_CFLAGS += -Wno-maybe-uninitialized
 GLOBAL_CFLAGS += --save-temps
@@ -535,7 +536,7 @@ NETWORK_RENAME_CODE2SRAM:
 #*****************************************************************************#
 
 %.o:%.c
-	$(CC) $(GLOBAL_CFLAGS) $(MODULE_IFLAGS) $<  -o $@
+	$(CC) $(GLOBAL_CFLAGS) -Wstrict-prototypes $(MODULE_IFLAGS) $<  -o $@
 
 #*****************************************************************************#
 #              RULES TO GENERATE OBJECT FILE FROM .CPP FILE                   #

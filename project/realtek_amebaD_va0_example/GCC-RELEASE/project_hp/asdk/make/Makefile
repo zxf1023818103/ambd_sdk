@@ -49,6 +49,7 @@ endif
 	@make -C project all
 	@make -C application all
 	#@make -C cmsis-dsp all
+	# @make -j8 -C tflm all
 #*****************************************************************************#
 #              CLEAN GENERATED FILES                                          #
 #*****************************************************************************#
@@ -80,4 +81,5 @@ clean:
 	@make -C ui clean
 	@make -C media clean
 	@make -C video clean
+	# @make -C tflm clean
 -include $(DEPS)
