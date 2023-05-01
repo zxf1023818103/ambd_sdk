@@ -36,3 +36,6 @@ project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/.menuconfig.log
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/config/.config.old
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_lp/asdk/.menuconfig.log
 project/realtek_amebaD_va0_example/GCC-RELEASE/project_lp/asdk/MCerror
+
+project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/make/application/tflm/*
+!project/realtek_amebaD_va0_example/GCC-RELEASE/project_hp/asdk/make/application/tflm/Makefile

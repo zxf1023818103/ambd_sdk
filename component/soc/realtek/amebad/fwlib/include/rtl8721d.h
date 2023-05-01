@@ -9,6 +9,10 @@
 #ifndef _HAL_8721D_H_
 #define _HAL_8721D_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "platform_autoconf.h"
 #include "basic_types.h"
 #include "section_config.h"
@@ -211,5 +215,9 @@ typedef enum  _HAL_Status
 #else
   #define assert_param(expr) ((void)0)
 #endif /* USE_FULL_ASSERT */
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif //_HAL_8721D_H_

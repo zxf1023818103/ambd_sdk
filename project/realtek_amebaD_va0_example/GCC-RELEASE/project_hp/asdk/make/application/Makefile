@@ -23,6 +23,7 @@ endif
 	#@make -C azure all
 	#@make -C azure_emb all
 	#@make -C airkiss all
+	@make -C tflm all
 #*****************************************************************************#
 #              CLEAN GENERATED FILES                                          #
 #*****************************************************************************#
@@ -34,4 +35,5 @@ clean:
 	#@make -C linkkit clean
 	#@make -C azure clean
 	@make -C azure_emb clean
+	@make -C tflm clean
 -include $(DEPS)

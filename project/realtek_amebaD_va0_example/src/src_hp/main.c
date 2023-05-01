@@ -176,7 +176,9 @@ int main(void)
 	wlan_network();
 	
 	/* Execute application example */
-	example_entry();
+	// example_entry();
+	extern void start_app(void);
+	start_app();
 #endif
 
 #if defined(CONFIG_EQC) && CONFIG_EQC
