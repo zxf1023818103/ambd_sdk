@@ -70,6 +70,8 @@ else
 LINK_APP_LIB =
 endif
 
+LINK_APP_LIB += $(ROOTDIR)/make/application/tflm/libtensorflow_microlite.lib
+
 ifeq ($(CONFIG_AUDIO_EN),y)
 #LINK_APP_LIB += $(ROOTDIR)/lib/application/lib_ac3.a
 LINK_APP_LIB += $(ROOTDIR)/lib/application/lib_amr.a

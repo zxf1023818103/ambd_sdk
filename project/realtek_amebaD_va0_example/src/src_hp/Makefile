@@ -28,9 +28,11 @@ vpath %.cpp $(DIR)
 CSRC += $(DIR)/main.c
 
 CXXSRC += $(DIR)/app.cpp
-CXXSRC += $(DIR)/evaluate_test.cpp
-CXXSRC += $(DIR)/models/hello_world_float_model_data.cpp
-CXXSRC += $(DIR)/models/hello_world_int8_model_data.cpp
+# CXXSRC += $(DIR)/evaluate_test.cpp
+# CXXSRC += $(DIR)/models/hello_world_float_model_data.cpp
+# CXXSRC += $(DIR)/models/hello_world_int8_model_data.cpp
+CXXSRC += $(DIR)/keyword_benchmark.cpp
+# CXXSRC += $(DIR)/person_detection_benchmark.cpp
 
 #*****************************************************************************#
 #                               Object FILE LIST                              #
@@ -42,7 +44,7 @@ OBJS = $(C_OBJS) $(CXX_OBJS)
 #*****************************************************************************#
 #                        RULES TO GENERATE TARGETS                            #
 #*****************************************************************************#
-all: CLEAN_OBJS CORE_TARGETS COPY_RAM_OBJS
+all: CORE_TARGETS COPY_RAM_OBJS
 
 #*****************************************************************************#
 #              GENERATE OBJECT FILE 

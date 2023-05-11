@@ -23,7 +23,7 @@ endif
 	#@make -C azure all
 	#@make -C azure_emb all
 	#@make -C airkiss all
-	@make -C tflm all
+	@make -j8 -C tflm all
 #*****************************************************************************#
 #              CLEAN GENERATED FILES                                          #
 #*****************************************************************************#

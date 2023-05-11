@@ -23,7 +23,6 @@ limitations under the License.
 #include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
 #include "tensorflow/lite/micro/system_setup.h"
 #include "tensorflow/lite/schema/schema_generated.h"
-#include "tensorflow/lite/micro/cortex_m_generic/debug_log_callback.h"
 
 namespace {
 using HelloWorldOpResolver = tflite::MicroMutableOpResolver<1>;
@@ -168,14 +167,7 @@ TfLiteStatus LoadQuantModelAndPerformInference() {
   return kTfLiteOk;
 }
 
-static void my_debug_log(const char* s)
-{
-  printf("%s", s);
-}
-
 int test_model(void) {
-  RegisterDebugLogCallback(my_debug_log);
-
   tflite::InitializeTarget();
   TF_LITE_ENSURE_STATUS(LoadFloatModelAndPerformInference());
   TF_LITE_ENSURE_STATUS(LoadQuantModelAndPerformInference());
